@@ -2,14 +2,13 @@ import { useState, useEffect } from 'react';
 import { saveAs } from 'file-saver';
 import './App.css';
 
-// Import components
 import Header from './components/Header';
 import JournalForm from './components/JournalForm';
 import EntryList from './components/EntryList';
 import Footer from './components/Footer';
 
 function App() {
-  // --- STATE MANAGEMENT ---
+ 
   const [entries, setEntries] = useState(() => {
     try {
       const savedEntries = localStorage.getItem('journalEntries');
@@ -26,7 +25,7 @@ function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('journalTheme') || 'light');
   const moodOptions = ['😊', '😂', '😢', '😠', '😍', '🤔', '😴', '😎'];
 
-  // --- SIDE EFFECTS (HOOKS) ---
+  
   useEffect(() => {
     localStorage.setItem('journalEntries', JSON.stringify(entries));
   }, [entries]);
@@ -37,7 +36,7 @@ function App() {
     localStorage.setItem('journalTheme', theme);
   }, [theme]);
 
-  // --- HANDLER FUNCTIONS ---
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!content.trim()) {

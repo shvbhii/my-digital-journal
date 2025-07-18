@@ -11,7 +11,7 @@ This is **Day 18** of my **#30DaysOfVibeCoding** challenge!
 
 ---
 
-### 🚀 [**Live Demo Link**](https://demo.vercel.app)
+### 🚀 [**Live Demo Link**](https://my-digital-journal.vercel.app/)
 
 
 
