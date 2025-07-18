@@ -1,0 +1,60 @@
+/* --- THEME & FONT DEFINITIONS --- */
+:root {
+  --font-heading: 'Lucida Handwriting', 'cursive';
+  --font-body: 'Georgia', serif;
+}
+
+body.light {
+  --bg-color: #fdfaf6;
+  --text-color: #333;
+  --header-color: #6b5b95;
+  --card-bg-color: #ffffff;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --accent-color: #6b5b95;
+  --tag-bg-color: #f0e6ff;
+  --tag-text-color: #51427a;
+  --border-color: #eee;
+  --button-hover-bg: #51427a;
+}
+
+body.dark {
+  --bg-color: #2c2c2c;
+  --text-color: #f1f1f1;
+  --header-color: #a192c7;
+  --card-bg-color: #383838;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --accent-color: #a192c7;
+  --tag-bg-color: #51427a;
+  --tag-text-color: #e2d9f8;
+  --border-color: #555;
+  --button-hover-bg: #7e6ca8;
+}
+
+body.serene {
+  --bg-color: #e8f5e9;
+  --text-color: #2e7d32;
+  --header-color: #388e3c;
+  --card-bg-color: #f1f8e9;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  --accent-color: #66bb6a;
+  --tag-bg-color: #c8e6c9;
+  --tag-text-color: #2e7d32;
+  --border-color: #dcedc8;
+  --button-hover-bg: #4caf50;
+}
+
+/* --- GLOBAL STYLES --- */
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}

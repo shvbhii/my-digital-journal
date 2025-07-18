@@ -1,0 +1,79 @@
+.journal-form {
+  background: var(--card-bg-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+}
+
+.journal-form h2 {
+  margin-top: 0;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+textarea, input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  resize: vertical;
+}
+
+.mood-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mood-selector label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.mood-option {
+  background: none;
+  border: 2px solid transparent;
+  font-size: 1.8rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mood-option:hover {
+  transform: scale(1.1);
+}
+
+.mood-option.selected {
+  border-color: var(--accent-color);
+  background-color: var(--tag-bg-color);
+}
+
+.add-entry-btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-entry-btn:hover {
+  background-color: var(--button-hover-bg);
+}

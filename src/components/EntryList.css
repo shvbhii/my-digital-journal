@@ -1,0 +1,33 @@
+.entries-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.entries-toolbar h2 {
+  margin: 0;
+  border-bottom: none;
+}
+
+.download-btn {
+  background: var(--tag-bg-color);
+  color: var(--tag-text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
+.no-entries-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 2rem;
+}
